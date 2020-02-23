@@ -125,6 +125,11 @@
             <input type="text" class="form-control mr-0 mr-lg-2" placeholder="Entrez une adresse">
             <button class="btn btn-outline-dark my-2 my-lg-0 btn-sm-block" type="submit">Localiser ma position</button>
           </form>
+          <form class="input-group mt-3">
+            <label for="customRange1">Choisir dans un rayon autour de vous (kilomètres)</label>
+            <input type="range" class="custom-range" min="10" max="100" step="10" value="100" id="myRange">
+            <span>Rayon : <span id="SliderVal"></span> kilomètres</span>
+          </form>
 
           <div class="card text-center mt-3">
             <h3 class="card-header">Brie-sous-Archiac</h3>
@@ -396,5 +401,14 @@
   <script src="assets/script/bootstrap.min.js"></script>
   <!-- Custom script (Accordéon) -->
   <script src="assets/script/scripts.js"></script>
+  <!-- Script Range -->
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("SliderVal");
+    output.innerHTML = slider.value;
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+    };
+  </script>
 </body>
 </html>
