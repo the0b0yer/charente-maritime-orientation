@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Max 160 carac desktop & 130 mobile -->
+  <meta name="description" content="Une question ? Un avis ? Un retour ? Contactez nous via le formulaire ou bien par l'un des autres moyens présents sur cette page.">
+  <meta name="keywords" content="Contact, Contacter, CO, Course d'Orientation, Charente-Maritime Orientation, club17, ClubCo CMO">
+  <meta name="author" content="Théo Boyer">
+
+  <title>Charente-Maritime Orientation - Nous contacter</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Liens d'évitements -->
+  <a href="#content-link" class="sr-only sr-only-focusable">Aller au contenu</a>
+  <a href="#footer-link" class="sr-only sr-only-focusable">Aller au pied de page</a>
+
+  <!-- Header -->
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="accueil.html"><img class="logo" src="assets/image/logo.jpg" alt="Logo du club Charente-Maritime Orientation"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="accueil.html">Accueil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Le Club
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item" href="co.html">Comment pratiquer ?</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="presentation.html">Présentation du club</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="licences.html">Licences</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="prestations.html">Prestations</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="calendrier.html">Calendrier</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://cmo17.forumactif.com/">Forum</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ecoleco.html">École de <abbr title="Course d'Orientation">CO</abbr></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Les courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="entrainements.html">Entraînements et Stages</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="raids.html" lang="en">Raids</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="trails.html" lang="en">Trails</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="competitions.html">Compétitions</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="eso.html"><abbr title="Espace Sports Orientation">ESO</abbr></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Nous contacter</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Fil d'ariane -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="accueil.html">Accueil</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Nous contacter</li>
+    </ol>
+  </nav>
+
+  <!-- Main -->
+  <section id="content-link" class="container cards">
+
+    <h1>Nous contacter</h1>
+
+    <p>Vous pouvez nous contacter via le formulaire ci-dessous ou nous envoyer un mail.</p>
+
+    <h2>Contact par formulaire</h2>
+
+    <form class="needs-validation clearfix mb-2">
+      <div class="form-group">
+        <label for="FormContactNom">Indiquez votre nom (obligatoire)</label>
+        <input type="text" class="form-control" id="FormContactNom" placeholder="Dupond" required>
+        <div class="invalid-tooltip">Il semblerait que votre nom ne soit pas valide. Voici un exemple valide : Dupond</div>
+      </div>
+      <div class="form-group">
+        <label for="FormContactMail">Votre adresse e-mail (obligatoire)</label>
+        <input type="email" class="form-control" id="FormContactMail" placeholder="nom@exemple.fr" data-minlength="6" required>
+        <div class="invalid-tooltip">Il semblerait que votre e-mail ne soit pas valide. Voici un exemple valide : nom@exemple.fr</div>
+      </div>
+      <div class="form-group">
+        <label for="FormControlSelect">Indiquez le motif de contact (obligatoire)</label>
+        <select class="form-control" id="FormControlSelect" required>
+          <option selected disabled value="">Choisir un motif</option>
+          <option>Demande d'informations</option>
+          <option>Demande d'alternative de contenu</option>
+          <option>Demande de licence/pass</option>
+          <option>Demande de prestation</option>
+          <option>Autre</option>
+        </select>
+        <div class="invalid-tooltip">Vous n'avez pas choisi de motif</div>
+      </div>
+      <div class="form-group">
+        <label for="FormTextareaContact">Indiquez votre demande (obligatoire)</label>
+        <textarea class="form-control" id="FormTextareaContact" rows="3" placeholder="Votre message" required></textarea>
+        <div class="invalid-tooltip">Il semblerait que vous n'ayez pas indiqué votre demande.</div>
+      </div>
+      <label for="customFile">Joindre des fichiers (optionnel)</label>
+      <div class="form-group custom-file">
+        <input type="file" class="custom-file-input" id="customFile" lang="fr">
+        <label class="custom-file-label" for="customFile">Choisir un fichier (un par un)</label>
+      </div>
+
+      <!-- Contenance des fichiers joints -->
+      <div id="FichierGenerer"></div>
+
+      <button id="contact-send" class="btn btn-primary mt-3 float-right" type="submit">Envoyer ma demande</button>
+    </form>
+
+    <div class="alert alert-success mt-3" role="alert" hidden>
+      Votre demande a bien été envoyée. Une réponse vous sera envoyée dès que possible.
+      <button type="button" class="close close-alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <h2>Autre moyen de contact</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 card-deck mt-3">
+      <div class="col mb-4">
+        <div class="card border-secondary mb-3 h-100">
+          <div class="card-header"><h3>Patrick Robin</h3><p>Président</p></div>
+          <div class="card-body text-secondary">
+            <p>Mail : <a href="mailto:patrick.robin1@free.fr">patrick.robin1@free.fr</a></p>
+            <p>Tél. : <a title="07 81 02 90 23" href="tel:+33781029023">07 81 02 90 23</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card border-secondary mb-3 h-100">
+          <div class="card-header"><h3>Jacques Lavalade</h3><p>Secrétaire</p></div>
+          <div class="card-body text-secondary">
+            <p>Mail : <a href="mailto:jlavalade@aol.com">jlavalade@aol.com</a></p>
+            <p>Tél. : <a title="06 14 02 27 57" href="tel:+33614022757">06 14 02 27 57</a></p>
+            <p>Tél. : <a title="05 46 83 03 20" href="tel:+33546830320">05 46 83 03 20</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card border-secondary mb-3 h-100">
+          <div class="card-header"><h3>Gérard Crochet</h3><p>Trésorier</p></div>
+          <div class="card-body text-secondary">
+            <p>Mail : <a href="mailto:gerard.crochet@clubinternet.fr">gerard.crochet@clubinternet.fr</a></p>
+            <p>Tél. : <a title="05 46 85 73 22" href="tel:+33546857322">05 46 85 73 22</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mb-3">Toute correspondance postale est à adresser à :</h3>
+    <p>M. Jacques Lavalade (<abbr title="Charente-Maritime Orientation">CMO</abbr>)</p>
+    <p>1, chemin du Frelin</p>
+    <p>17620 Echillais</p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer-link" class="page-footer font-small blue pt-4 bg-light">
+
+    <div class="container-fluid text-center text-lg-left">
+
+      <div class="row">
+        <div class="col-md-7 mt-md-0 mt-3 mb-4 d-flex">
+
+          <a class="mr-4 d-none d-sm-block" href="accueil.html"><img class="logo-footer" src="assets/image/logo.jpg" alt="Logo du club Charente-Maritime Orientation"></a>
+
+          <div class="w-100">
+            <h2 class="fs-1-25 text-uppercase">Contact</h2>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <p class="mb-0">1 chemin du Frelin</p>
+                <p>17620 Echillais</p>
+              </div>
+              <div class="col-lg-4">
+                <a title="06 14 02 27 57" href="tel:+33614022757">06 14 02 27 57</a><br>
+                <a title="05 46 83 03 20" href="tel:+33546830320">05 46 83 03 20</a>
+              </div>
+
+              <div class="col-lg-4 mt-lg-0 mt-3">
+                <a class="btn btn-success" href="contact.html" role="button">Nous contacter</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-5 mb-md-0 mb-3">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-lg-2 btn-sm-block" type="search" placeholder="Rechercher" aria-label="Rechercher">
+            <button class="btn btn-outline-success my-2 my-lg-0 btn-sm-block" type="submit">Rechercher</button>
+          </form>
+        </div>
+
+      </div>
+
+      <hr class="w-100 d-md-none pb-3">
+
+      <!-- Liens -->
+
+      <h2 class="fs-1-25 text-uppercase text-center pb-3">Liens</h2>
+      <div class="row vdivide">
+
+        <div class="col-md-6 text-center">
+          <ul class="list-unstyled mb-md-1 mb-0">
+            <li>
+              <a href="legal.html">Mentions légales</a>
+            </li>
+            <li>
+              <a href="accessibilite.html">Accessibilité</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <ul class="list-unstyled">
+            <li>
+              <a href="sitemap.html">Plan du site</a>
+            </li>
+            <li>
+              <a href="partenaires.html">Nos partenaires</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="assets/script/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/script/popper.min.js"></script>
+  <script src="assets/script/bootstrap.min.js"></script>
+  <!-- Formulaire -->
+  <script src="assets/script/scripts.js"></script>
+  <script>
+    // JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        $('.needs-validation').attr('novalidate', 'novalidate');
+        // Alerte du succès du formulaire
+        $('.close-alert').click(function(){
+          $('.alert').attr('hidden', 'hidden');
+        });
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+              // $('#contact-send').attr('disabled', 'disabled');
+            }
+            else {
+              event.preventDefault();
+              $('.alert').removeAttr('hidden');
+              // $('#contact-send').removeAttr('disabled');
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+
+      }, false);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+/* -----------------------------------------------------------
+		Font
+----------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap');
+
+@media screen and (max-width: 1680px) {
+
+			html {
+				font-size: 12pt;
+			}
+
+		}
+
+@media screen and (max-width: 736px) {
+
+	html {
+		font-size: 11pt;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+		line-height: 1.4;
+	}
+
+	h2 {
+		font-size: 1.25em;
+		line-height: 1.5;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	html {
+		font-size: 10pt;
+	}
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif;;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;;
+}
+
+/* -----------------------------------------------------------
+		CSS général
+----------------------------------------------------------- */
+
+body {
+	background-image: url('../image/background.jpg');
+	background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header */
+.logo {
+  height: 50px;
+}
+
+/* Section */
+
+.cards {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 1.5rem 2rem !important;
+  margin: 1rem auto;
+}
+
+.fs-1-25 {
+  font-size: 1.25rem !important;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.mw-48 {
+	min-width: 48%;
+}
+
+.img-wh-cover {
+	width: 100%;
+	height: 20em !important;
+	object-fit: cover;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-pointer:hover,
+.cursor-pointer:focus {
+	text-decoration: underline;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+a > abbr[title] {
+  border-bottom: none;
+  cursor: inherit;
+  text-decoration: none;
+}
+
+.list-group-item:focus {
+	text-decoration: underline;
+}
+
+.badge-orange {
+	background-color: #EC7404;
+	color: white;
+}
+
+/* Footer */
+
+.logo-footer {
+  height: 100px;
+}
+
+.row.vdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 10px;
+  right: 0;
+  min-height: 50px;
+}
+
+@media (max-width: 992px) {
+  .btn-sm-block {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+/* -----------------------------------------------------------
+		CSS localisé
+----------------------------------------------------------- */
+
+/* Formulaire */
+
+.sr-only {
+	background-color: white;
+}
+
+/* Formulaire */
+
+form.is-invalid ~ .invalid-feedback, form.is-invalid ~ .invalid-tooltip, form.was-validated :invalid ~ .invalid-feedback, form.was-validated :invalid ~ .invalid-tooltip {
+	display: inline-block;
+	position: relative;
+}
+
+.custom-file-input:lang(fr) ~ .custom-file-label::after {
+  content: "Rechercher";
+}
+
+/* Présentation */
+
+.logo-presentation {
+	height: 200px;
+}
+
+/* Plan du site */
+
+.sitemap a {
+	color: #6c757d;
+}
+
+/* Carousel */
+
+.top-content {
+	width: 100%;
+}
+
+.carousel-img-h-cover {
+	height: 15em !important;
+	object-fit: cover;
+}
+
+.carousel-max-h {
+	max-height: 350px;
+}
+
+.top-content .carousel-caption {
+	bottom: 30px;
+}
+
+.bc-white > li {
+	background-color: white !important;
+}
+
+.top-content .carousel-indicators li {
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+.top-content button.btn-customized {
+	width: 46px;
+	height: 46px;
+	margin-top: 1rem;
+	padding: 0;
+	background: rgba(27, 31, 34, 0.7);
+	border: 0;
+	border-radius: 50%;
+	font-size: 15px;
+	color: #fff;
+	line-height: 46px;
+	box-shadow: none;
+}
+
+/* Modification du fill='%6c757d' */
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%6c757d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%6c757d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* iframe map */
+
+.iframemap {
+	width: 100%;
+	height: 200px;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 5px;
+}
+
+/* Accordéon */
+
+[data-toggle="collapse"] .fa-icon-accordion:before {
+  content: "\f068";
+}
+
+[data-toggle="collapse"].collapsed .fa-icon-accordion:before {
+  content: "\f067";
+}
+
+/* Comment pratiquer ? */
+
+.max-w {
+	max-width: 200px;
+}
